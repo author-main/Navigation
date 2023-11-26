@@ -23,4 +23,9 @@
         android:label="CatalogFragment"
         tools:layout="@layout/fragment_catalog"
         />
+    <fragment
+        android:id="@+id/tabsFragment"
+        android:name="com.app.navigation.presentation.TabsFragment"
+        android:label="fragment_tabs"
+        tools:layout="@layout/fragment_tabs" />
 </navigation>
