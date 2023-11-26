@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
 }
 
 android {
@@ -52,4 +53,11 @@ dependencies {
     implementation(project(mapOf("path" to ":features:signin")))
     implementation(project(mapOf("path" to ":features:signup")))
     implementation(project(mapOf("path" to ":features:catalog")))
+
+    val dagger_ver = "2.48.1"
+    implementation ("com.google.dagger:dagger:$dagger_ver")
+    implementation ("com.google.dagger:dagger-android:$dagger_ver")
+    implementation ("com.google.dagger:dagger-android-support:$dagger_ver")
+    kapt ("com.google.dagger:dagger-compiler:$dagger_ver")
+    kapt ("com.google.dagger:dagger-android-processor:$dagger_ver")
 }
