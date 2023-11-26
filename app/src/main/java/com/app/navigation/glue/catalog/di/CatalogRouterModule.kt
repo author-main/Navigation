@@ -7,6 +7,7 @@ import dagger.Module
 
 @Module
 interface CatalogRouterModule {
+
     @Binds
     fun bindCatalogRouter(router: AdapterCatalogRouter): CatalogRouter
 
