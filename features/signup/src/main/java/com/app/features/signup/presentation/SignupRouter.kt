@@ -1,4 +1,4 @@
-package com.app.features.signup
+package com.app.features.signup.presentation
 
 interface SignupRouter {
     fun goBack()
