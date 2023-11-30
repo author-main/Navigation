@@ -28,4 +28,16 @@
         android:name="com.app.navigation.presentation.TabsFragment"
         android:label="fragment_tabs"
         tools:layout="@layout/fragment_tabs" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.app.features.cart.presentation.cart.CartFragment"
+        android:label="CartFragment"
+        tools:layout="@layout/fragment_cart"
+        />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.features.profile.presentation.profile.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        />
 </navigation>

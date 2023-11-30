@@ -53,6 +53,8 @@ dependencies {
     implementation(project(mapOf("path" to ":features:signin")))
     implementation(project(mapOf("path" to ":features:signup")))
     implementation(project(mapOf("path" to ":features:catalog")))
+    implementation(project(mapOf("path" to ":features:cart")))
+    implementation(project(mapOf("path" to ":features:profile")))
 
     val dagger_ver = "2.48.1"
     implementation ("com.google.dagger:dagger:$dagger_ver")

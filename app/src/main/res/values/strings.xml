@@ -1,7 +1,6 @@
 <resources>
     <string name="app_name">Navigation</string>
-    <string name="title_home">Главная</string>
-    <string name="title_catalog">Каталог</string>
-    <string name="title_cart">Корзина</string>
-    <string name="title_profile">Профиль</string>
+    <string name="tab_catalog">Каталог</string>
+    <string name="tab_cart">Корзина</string>
+    <string name="tab_profile">Профиль</string>
 </resources>
