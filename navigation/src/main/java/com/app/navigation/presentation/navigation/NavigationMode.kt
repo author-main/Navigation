@@ -2,7 +2,7 @@ package com.app.navigation.presentation.navigation
 
 sealed class NavigationMode : java.io.Serializable {
 
-    object Stack : NavigationMode()
+    data object Stack : NavigationMode()
 
     class Tabs(
         val tabs: ArrayList<NavTab>,
