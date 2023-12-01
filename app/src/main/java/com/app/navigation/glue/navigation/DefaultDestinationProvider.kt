@@ -20,7 +20,7 @@ class DefaultDestinationProvider(private val context: Context): DestinationProvi
             ),
             NavTab(
                 destinationId = R.id.cartFragment,
-                title = context.getString(R.string.tab_profile),
+                title = context.getString(R.string.tab_cart),
                 iconRes = R.drawable.ic_cart,
             )
         )
