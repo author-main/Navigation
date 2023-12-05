@@ -24,6 +24,10 @@ android {
         correctErrorTypes=true
     }
 
+    hilt {
+        enableAggregatingTask = true
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
