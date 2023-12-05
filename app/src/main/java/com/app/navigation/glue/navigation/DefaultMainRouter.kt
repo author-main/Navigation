@@ -4,6 +4,6 @@ import com.app.navigation.presentation.MainRouter
 
 class AdapterSignupRouter: MainRouter {
     override fun launchCatalog() {
-        TODO("Not yet implemented")
+
     }
 }
