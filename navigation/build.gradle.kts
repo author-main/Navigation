@@ -2,6 +2,7 @@ plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
+    //id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -31,6 +32,14 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+  /*  kapt {
+        correctErrorTypes=true
+    }
+
+    hilt {
+        enableAggregatingTask = true
+    }*/
 }
 
 dependencies {
@@ -43,11 +52,14 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    val dagger_ver = "2.48.1"
+    val dagger_ver = "2.49"
     implementation ("com.google.dagger:dagger:$dagger_ver")
     implementation ("com.google.dagger:dagger-android:$dagger_ver")
     implementation ("com.google.dagger:dagger-android-support:$dagger_ver")
     kapt ("com.google.dagger:dagger-compiler:$dagger_ver")
     kapt ("com.google.dagger:dagger-android-processor:$dagger_ver")
+
+    /*implementation ("com.google.dagger:hilt-android:2.49")
+    kapt ("com.google.dagger:hilt-compiler:2.49")*/
 
 }

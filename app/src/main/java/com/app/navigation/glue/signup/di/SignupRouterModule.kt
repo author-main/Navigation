@@ -6,6 +6,7 @@ import dagger.Binds
 import dagger.Module
 
 @Module
+//@InstallIn(ActivityRetainedComponent::class)
 interface SignupRouterModule {
     @Binds
     fun bindSignupRouter(router: AdapterSignupRouter): SignupRouter

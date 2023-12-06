@@ -6,6 +6,7 @@ import dagger.Binds
 import dagger.Module
 
 @Module
+//@InstallIn(ActivityRetainedComponent::class)
 interface CartRouterModule {
     @Binds
     fun bindCartRouter(router: AdapterCartRouter): CartRouter

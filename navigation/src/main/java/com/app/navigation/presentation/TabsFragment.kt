@@ -10,6 +10,7 @@ import com.app.navigation.presentation.navigation.NavigationMode
 import com.app.navigation.presentation.navigation.NavigationModeHolder
 import javax.inject.Inject
 
+//@AndroidEntryPoint
 class TabsFragment : Fragment() {
 
     @Inject

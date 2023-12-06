@@ -6,6 +6,7 @@ import dagger.Binds
 import dagger.Module
 
 @Module
+//InstallIn(ActivityRetainedComponent::class)
 interface ProfileRouterModule {
     @Binds
     fun bindProfileRouter(router: AdapterProfileRouter): ProfileRouter

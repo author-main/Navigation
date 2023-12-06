@@ -6,6 +6,7 @@ import dagger.Binds
 import dagger.Module
 
 @Module
+//@InstallIn(SingletonComponent::class)
 interface StartDestinationProvider {
     @Binds
     fun bindStartDestinationProvider(startDestinationProvider: DefaultDestinationProvider): DestinationProvider
